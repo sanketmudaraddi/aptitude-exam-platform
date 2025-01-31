@@ -20,15 +20,15 @@ A web application for conducting online aptitude tests with separate admin and s
 ## Prerequisites
 
 - Node.js (v14 or higher)
-- MongoDB (v4.4 or higher)
+- Postgres 17.2 
 - npm or yarn package manager
 
 ## Installation
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd aptitude-test-app
+git clone https://github.com/sanketmudaraddi/aptitude-exam-platform.git
+cd aptitude-exam-platform
 ```
 
 2. Install dependencies:
@@ -38,7 +38,9 @@ npm install
 
 3. Create a `.env` file in the root directory with the following variables:
 ```
-MONGODB_URI=mongodb://localhost:27017/aptitude-test
+DB_NAME=aptitude
+DB_USER=your_username
+DB_PASSWORD=your_password
 JWT_SECRET=your_jwt_secret_key_here
 PORT=5000
 EMAIL_SERVICE=gmail
